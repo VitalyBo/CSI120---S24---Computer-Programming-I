@@ -22,7 +22,7 @@ namespace Сonsole
              Console.WriteLine("write number 1: ");
              string number_2 = "empty";
              number_2 = Console.ReadLine();
-                Console.WriteLine("Choose what you want: \n1.Adding\r\n2.Subtraction\r\n3.Division\r\n4.Multiplication\r\n5.Exit from program");
+                Console.WriteLine("Choose what you want: \n1.Adding\r\n2.Subtraction\r\n3.Division\r\n4.Multiplication\r\n5.Adding the individual values of a 3 digit number together\r\n6.Exit from program");
                 Console.WriteLine("Choose and put number from 1 to 5");
 
                 choice = int.Parse(Console.ReadLine());
@@ -63,7 +63,21 @@ namespace Сonsole
                     continue;
                 }
 
-                if (choice == 5)
+                if (choice == 5) 
+                {
+                    Console.WriteLine("Enter a three-digit number:");
+                    int number = int.Parse(Console.ReadLine());
+
+                    
+                    int digit_1 = number / 100;          
+                    int digit_2 = (number / 10) % 10;     
+                    int digit_3 = number % 10;                        
+                    int sum = digit_1 + digit_2 + digit_3;
+                    Console.WriteLine("Sum of the individual digits: " + sum);
+                    continue;
+                }
+
+                if (choice == 6)
                 {
                     Console.Write("\nThank you for using our App for high level dificult calculations!");
                     break;
