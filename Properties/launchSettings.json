@@ -1,0 +1,17 @@
+{
+  "profiles": {
+    "CSI120 - S24 - Computer Programming I": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    },
+    "Profile 1": {
+      "commandName": "Project"
+    },
+    "Profile 2": {
+      "commandName": "Project"
+    }
+  }
+}
